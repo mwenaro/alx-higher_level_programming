@@ -1,5 +1,5 @@
-//Write a JavaScript script that updates the text color of the <header> element to red (#FF0000)
+// Write a JavaScript script that updates the text color of the <header> element to red (#FF0000)
 
-const header = document.querySelector("header");
+const header = document.querySelector('header');
 
-header.style.color = "#FF0000";
+header.style.color = '#FF0000';
