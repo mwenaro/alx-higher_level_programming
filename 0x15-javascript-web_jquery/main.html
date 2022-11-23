@@ -2,14 +2,38 @@
 <html lang="en">
   <head>
     <title>Holberton School</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script async type="text/javascript" src="103-script.js"></script>
+    <script async type="text/javascript" src="4-script.js"></script>
+    <style>
+      .red {
+        color: #FF0000;
+      }
+      .green {
+        color: #00FF00;
+      }
+    </style>
   </head>
   <body>
-    <header> 
-      First HTML page
-    </header>
-    <footer>
-      Holberton School - 2017
-    </footer>
-    <script type="text/javascript" src="0-script.js"></script>
+    <header class="red">First HTML page</header>
+    <div id="toggle_header">Toggle Header Color</div>
+    <div id="add_item">Add item</div>
+    <div id="remove_item">Remove item</div>
+    <div id="clear_list">Clear list</div>
+    <br />
+    <ul class="my_list">
+      <li>Item</li>
+    </ul>
+    <div>
+      <br />
+      <input id="language_code" type="text" placeholder="Language code" />
+      <input id="btn_translate" type="button" value="Translate" />
+      <br />
+      <div id="hello"></div>
+      <br />
+      <footer>Holberton School - 2017</footer>
+    </div>
+    <footer>Holberton School - 2017</footer>
+    <!-- <script type="text/javascript" src="100-script.js"></script> -->
   </body>
 </html>
