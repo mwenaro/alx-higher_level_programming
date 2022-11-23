@@ -1,15 +1,11 @@
-//
-const btnTranslate = document.querySelector('INPUT#btn_translate');
-const languageCode = document.querySelector('INPUT#language_code');
-const helloDiv = document.querySelector('DIV#hello');
-
-btnTranslate.addEventListener('click', () => {
-  // Get the language code
-  const code = languageCode.value;
-  fetch(`https://stefanbohacek.com/hellosalut/?lang=${code}`)
-    .then((res) => res.json())
-    .then(({ hello }) => {
-      helloDiv.innerHTML = hello;
-    })
-    .catch((err) => console.log(' Something went wrong, ' + err));
+$('document').ready(function () {
+  $('DIV#add_item').click(function () {
+    $('UL.my_list').append('<li>Item</li>');
+  });
+  $('DIV#remove_item').click(function () {
+    $('UL.my_list li:last').remove();
+  });
+  $('DIV#clear_list').click(function () {
+    $('UL.my_list').empty();
+  });
 });
